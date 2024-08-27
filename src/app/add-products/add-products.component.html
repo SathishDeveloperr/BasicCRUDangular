@@ -1,0 +1,12 @@
+<div>
+    <h3>Add Item</h3>
+    <input [(ngModel)]="newItem.name" placeholder="Item name" />
+    <button (click)="addItem()">Add</button>
+  
+    <div *ngIf="editItem">
+      <h3>Edit Item</h3>
+      <input [(ngModel)]="editItem!.name" placeholder="Item name" />
+      <button (click)="updateItem()">Update</button>
+    </div>
+  </div>
+  
